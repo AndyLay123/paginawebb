@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservación de Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <h1>Reservación de Restaurante</h1>
+    <form id="reservacion-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required><br><br>
+
+        <label for "hora">Hora:</label>
+        <input type="time" id="hora" required><br><br>
+
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" required><br><br>
+
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios"></textarea><br><br>
+
+        <button type="button" onclick="confirmarReserva()">Reservar</button>
+    </form>
+
+    <div id="confirmacion" style="display: none;">
+        <h2>¡Reserva confirmada!</h2>
+        <p>Gracias por elegir nuestro restaurante. Tu reserva para <span id="confirmacion-fecha-hora"></span> ha sido confirmada.</p>
+    </div>
+     
+
+    <script src="script.js"></script>
+</body>
+</html>
+
